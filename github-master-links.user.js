@@ -4,8 +4,8 @@
 // @description   Changes the ugly links with the commit id
 // @include       http://github.com/*/master*
 // @include       https://github.com/*/master*
-// @exclude       http://github.com/*/commits/master
-// @exclude       https://github.com/*/commits/master
+// @exclude       http://github.com/*/commits/master*
+// @exclude       https://github.com/*/commits/master*
 // ==/UserScript==
 
 // thanks to Dive Into Greasemonkey http://diveintogreasemonkey.org/ 
