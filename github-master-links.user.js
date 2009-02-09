@@ -27,7 +27,7 @@ for (var i = 0; i < allLinks.snapshotLength; i++) {
 }
 
 function branchName(url){
-    return url.split("/")[5];
+    return url.split("/")[6];
 }
 
 function xpath(query) {
