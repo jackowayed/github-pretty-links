@@ -21,13 +21,13 @@ allLinks = xpath('//a[@href]');
 for (var i = 0; i < allLinks.snapshotLength; i++) {
     link = allLinks.snapshotItem(i);
 // do something with thisLink
-    branch_name = branchName(link.href);
+    branch_name = branchName(location.href);
     if (branch_name!=null)
 	link.href=link.href.replace(/[\w^_]{40,40}/, branch_name);
 }
 
 function branchName(url){
-    return url.split("/")[6];
+    return url.split("/")[7];
 }
 
 function xpath(query) {
