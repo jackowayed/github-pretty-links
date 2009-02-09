@@ -2,6 +2,8 @@
 // @name          Github Master Links
 // @namespace     http://jackowayed/github.com/
 // @description   Changes the ugly links with the commit id
+// @include       http://github.com/*
+// @include       https://github.com/*
 // @exclude       http://github.com/*/*/commits*
 // @exclude       https://github.com/*/*/commits*
 // @exclude       http://github.com/*/*/blame*
