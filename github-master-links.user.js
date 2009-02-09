@@ -31,7 +31,17 @@ for (var i = 0; i < allLinks.snapshotLength; i++) {
 }
 
 function shouldChange(link){
-
+    // check if it's in right side of that blue box 
+    // w/ the commit tree parent links
+    p = link.parentNode;
+    if (p!=null){
+	p = p.parentNode;
+	if (p!=null){
+	    if (p.id=="commit")
+		return false;
+	}
+    }
+    
 
     return true;
 }
