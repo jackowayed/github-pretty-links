@@ -15,7 +15,7 @@
 // thanks to Dive Into Greasemonkey http://diveintogreasemonkey.org/ 
 // which is copyright 2005 by Mark Pilgrim.
 // and licensed under the GNU General Public License
-// The code is adapted from the book, and thus is also licensed under the GNU GPL
+// The code is adapted from the book and is realeased under the MIT License
 
 
 var allLinks, thisLink;
