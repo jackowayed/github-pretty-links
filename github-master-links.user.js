@@ -19,9 +19,14 @@ allLinks = xpath('//a[@href]');
 for (var i = 0; i < allLinks.snapshotLength; i++) {
     link = allLinks.snapshotItem(i);
 // do something with thisLink
-    link.href=link.href.replace(/[\w^_]{40,40}/, "master");
+    branch_name = branchName(link.href);
+    if (branch_name!=null)
+	link.href=link.href.replace(/[\w^_]{40,40}/, branch_name);
 }
 
+function branchName(url){
+    return url.split("/")[6];
+}
 
 function xpath(query) {
     return document.evaluate(query, document, null,
