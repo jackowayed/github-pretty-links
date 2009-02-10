@@ -34,8 +34,10 @@ function shouldChange(link){
     // check if it's in right side of that blue box 
     // w/ the commit tree parent links
     p = link.parentNode;
+    console.log(p.id);
     if (p!=null){
 	p = p.parentNode;
+	console.log(p.id);
 	if (p!=null){
 	    if (p.id=="commit")
 		return false;
