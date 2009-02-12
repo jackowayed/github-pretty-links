@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Github Master Links
 // @namespace     http://jackowayed/github.com/
-// @description   Changes the ugly links with the commit id
+// @description   Changes the ugly links with the commit id to links with branch name, selectively leaving times when the old site kept commitids (in history, for example)
 // @include       http://github.com/*
 // @include       https://github.com/*
 // @exclude       http://github.com/*/*/commits*
