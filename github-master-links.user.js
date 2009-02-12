@@ -31,22 +31,26 @@ for (var i = 0; i < allLinks.snapshotLength; i++) {
 }
 
 function shouldChange(link){
+    // Test all of the reasons not to change it ...
+
+
     // check if it's in right side of that blue box 
     // w/ the commit tree parent links
     // TODO make this work. 
-    var p = link.parentNode;
-    console.log(p.id);
-    if (p!=null){
-	p = p.parentNode;
-	console.log(p.id);
-	if (p!=null){
-	    if (p.id=="commit")
-		return false;
-	}
-    }
+    var p3 = nthParent(link);
+    if (p3!=null && p3.id=="commit")
+	return false;
     
 
+    // ... then change it if there's no reason not to
     return true;
+}
+function nthParent(link, n){
+    if (n<=0)
+	return link;
+    var p = link.parentNode;
+    if (p!=null)
+	return nthParent(p, n-1);
 }
 
 function branchName(url){
