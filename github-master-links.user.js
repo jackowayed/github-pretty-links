@@ -36,7 +36,7 @@ function shouldChange(link){
 
     // check if it's in right side of that blue box 
     // w/ the commit tree parent links
-    // TODO make this work. 
+    // This actuall works now
     var p3 = nthParent(link, 4);
     if (p3!=null && p3.id=="commit")
 	return false;
