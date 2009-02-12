@@ -21,7 +21,7 @@
 var allLinks, thisLink;
 allLinks = xpath('//a[@href]');
 for (var i = 0; i < allLinks.snapshotLength; i++) {
-    link = allLinks.snapshotItem(i);
+    var link = allLinks.snapshotItem(i);
 // do something with thisLink
     if (shouldChange(link)){
 	branch_name = branchName(location.href);
@@ -33,7 +33,8 @@ for (var i = 0; i < allLinks.snapshotLength; i++) {
 function shouldChange(link){
     // check if it's in right side of that blue box 
     // w/ the commit tree parent links
-    p = link.parentNode;
+    // TODO make this work. 
+    var p = link.parentNode;
     console.log(p.id);
     if (p!=null){
 	p = p.parentNode;
