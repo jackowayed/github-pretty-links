@@ -39,6 +39,8 @@ The links automatically change on the site thanks to the magic of Greasemonkey. 
 
 It knows when you're in the history page and other times when you're looking at a link that's meant to be to a specific commit and doesn't change in those cases. (At least most of the time it knows.)
 
+It also knows when you're on a branch other than master and replaces with that branchname. 
+
 <h2>Dependencies</h2>
 "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748
 <h2>Install</h2>
