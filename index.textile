@@ -23,10 +23,26 @@ Bring back links with master! Greasemonkey script replaces the long commit key w
 
 p{color:red; size:20pt;}. THIS MAY REPLACE THE COMMIT ID WITH THE BRANCH NAME ON LINKS YOU DON'T WANT IT TO. I THIN I HAVE MOST CASES COVERED, BUT I'M SURE THERE ARE MORE. You can always just click on the little monkey at the bottom to turn off greasemonkey and reload if you run into that. Also, _please_ help make the script better by "reporting a bug":http://wiki.github.com/jackowayed/github-pretty-links/bugs 
 
+h2. Example
+
+This link:
+
+<pre>http://github.com/jackowayed/github-pretty-links/blob/7fc7f1ee758a9582c28fc5bc834100a97641e944/github-pretty-links.user.js</pre>
+
+Turns into:
+
+<pre>http://github.com/jackowayed/github-pretty-links/blob/master/github-pretty-links.user.js</pre>
+
+h2. What Exactly It Does
+
+The links automatically change on the site thanks to the magic of Greasemonkey. All you have to do is have it enabled and it will rapidly change the links on the page each time you load a page on github. 
+
+It knows when you're in the history page and other times when you're looking at a link that's meant to be to a specific commit and doesn't change in those cases. (At least most of the time it knows.)
+
 <h2>Dependencies</h2>
 "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748
 <h2>Install</h2>
-Click "this link":http://github.com/jackowayed/github-pretty-links/raw/master/github-pretty-links.user.js
+Click "this link":http://github.com/jackowayed/github-pretty-links/raw/master/github-pretty-links.user.js with Greasemonkey enabled. 
 
 h2. Bugs
 
