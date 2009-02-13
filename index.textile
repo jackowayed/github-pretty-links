@@ -18,6 +18,9 @@ layout: default
 Bring back links with master! Greasemonkey script replaces the long commit key with "master" in links on github selectively, attempting to make the site just like how it was before.
 </div>
 
+p(#color:red;size: 16pt;) THIS MAY REPLACE THE COMMIT ID WITH THE BRANCH NAME ON LINKS YOU DON'T WANT IT TO. I THIN I HAVE MOST CASES COVERED, BUT I'M SURE THERE ARE MORE. You can always just click on the little monkey at the bottom to turn off greasemonkey and reload if you run into that. Also, _please_ help make the script better by "reporting a bug":http://wiki.github.com/jackowayed/github-pretty-links/bugs 
+
+
 <p>Uses greasemonkey to get the old github master links back, selectively for when you actually want them (ie. when they were "master" back before they changed them)</p><h2>Dependencies</h2>
 "Greasemonkey":https://addons.mozilla.org/en-US/firefox/addon/748
 <h2>Install</h2>
